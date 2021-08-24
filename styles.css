@@ -1,0 +1,317 @@
+
+body{
+background-color: #d7e1e3;
+display: flex;
+justify-content: center;
+font-family: 'Roboto Mono', monospace;
+}
+
+.master{
+
+    height: 100vh;
+    border-radius: 2px;
+    margin: 20px;
+    width: 60vw;
+}
+
+.middle{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    background-color: #374785;
+
+}
+
+.mid-splash{
+
+    display: flex;
+    justify-content: center;
+}
+
+.header-image{
+    width: 80%;
+    margin: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.header-main{
+display: flex;
+background-color: #ff9933;
+height: 10vh;
+margin: 5px;
+box-shadow: 2px 2px 2px black;
+}
+
+.about-section{
+background-image: url('banner-bot.jpg');
+height: 80%;
+width: 100%;
+margin-bottom: 25px;
+margin-top: 25px;
+display: none;
+opacity: 0;
+transition: all 3s;
+}
+
+.about-text-box{
+
+}
+
+.about-text-fill{
+
+}
+
+.mid-main{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    margin: 5px;
+    width: 60vw;
+}
+
+.movie-expand{
+    display: none;
+    transition: all 2s;
+}
+
+.music-expand{
+    display: none;
+    transition: all 2s;
+}
+
+.mid-master{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+
+}
+
+.mid-left{
+background-color: #F76D6D;
+height: 50vh;
+width: 50%;
+margin: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding-bottom: 25px;
+box-shadow: 2px 2px 2px black;
+}
+
+.mid-right{
+background-color: #A8D1E7;
+height: 50vh;
+width: 50%;
+margin: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 2px 2px 2px black;
+padding-bottom: 25px;
+}
+
+button{
+    height: 30px;
+    width: 185px;
+    background-color: #374785;
+    font-size: large;
+    font-weight: bold;
+    color: #d7e1e3;
+    box-shadow: 1px 1px 1px black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: #F8E99E;
+    height: 10vh;;
+    box-shadow: 1px 1px 1px  black;
+}
+
+.music-pic{
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: all 2s;
+}
+
+.movie-pic{
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 2px  2px 2px 2px black;
+    transition: all 2s;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.title-text{
+    color: white;
+    font-size: 70px;
+    margin: 50px;
+}
+
+.movie-expand{
+    width: 60vw;
+    text-align: center;
+}
+
+.music-expand{
+    width: 60vw;
+    text-align: center;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: all 2s;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    transition: all 2s;
+  }
+
+  .lineThrough{
+      color: lightgray;
+      text-decoration: line-through;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.text-title{
+    font-size: 35px;
+    color: #374785;
+    text-shadow: #d7e1e3 1px 1px 1px;
+}
+
+h2{
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+    
+    body {
+      justify-content: center;
+    }
+
+    .master{
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mid-main{
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        align-items: center;
+        
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: start;
+        margin-bottom: 40px;
+    }
+
+    .middle{
+
+    }
+
+    .header-image{
+        display: none;
+    }
+    
+    .footer{
+        flex-direction: column;
+        height: 15vh;
+        width: 60vw;
+    }
+
+    .mid-left{
+        width: 80vw;
+        height: 30vh;
+
+    }
+
+    .mid-right{
+        width: 80vw;
+        height: 30vh;
+
+    }
+
+    .movie-pic{
+        width: auto;
+    }
+
+    .movie-expand{
+        width: 90vw;
+    }
+
+    .music-expand{
+        width: 90vw;
+    }
+
+    .reset{
+        display: none;
+    }
